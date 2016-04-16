@@ -329,7 +329,7 @@ your extruder heater takes 2 minutes to hit the target on heating.
 // The pullups are needed if you directly connect a mechanical endswitch between the signal and ground pins.
 const bool X_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
 const bool Y_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
-const bool Z_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
+const bool Z_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
 const bool X_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
 const bool Y_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
 const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
@@ -373,7 +373,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // Travel limits after homing
 #define X_MAX_POS 190
 #define X_MIN_POS 0
-#define Y_MAX_POS 180
+#define Y_MAX_POS 235
 #define Y_MIN_POS 0
 #define Z_MAX_POS 160
 #define Z_MIN_POS 0
@@ -411,8 +411,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
     // set the rectangle in which to probe
     #define LEFT_PROBE_BED_POSITION 10
     #define RIGHT_PROBE_BED_POSITION 130
-    #define BACK_PROBE_BED_POSITION 160
-    #define FRONT_PROBE_BED_POSITION 40
+    #define BACK_PROBE_BED_POSITION 200
+    #define FRONT_PROBE_BED_POSITION 50
     
     // reglage pour le proto
      // set the rectangle in which to probe
@@ -545,7 +545,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // Preheat Constants
 #define PLA_PREHEAT_HOTEND_TEMP 200
-#define PLA_PREHEAT_HPB_TEMP 75
+#define PLA_PREHEAT_HPB_TEMP 65
 #define PLA_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
 #define ABS_PREHEAT_HOTEND_TEMP 240
